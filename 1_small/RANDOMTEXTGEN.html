@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>random text generator</title>
+
+</head>
+<body>
+    <h1>generate random text</h1>
+    <p id="para"></p>
+    <button id="button", onclick="geneator()"> geneator </button>
+
+    <script>
+        let randomtext = ['sdffsdfsdffff','fsdafadsfagth','hgretrtgh'];
+        let par = document.getElementById("para");
+        let count = new Set();
+
+        function geneator(){
+            if(count=> randomtext.length){
+                count.clear();
+            }
+            while(true){
+                let index = Math.floor(Math.random() * randomtext.length);
+                if(count.has(index)){
+                    break
+                }else{
+                    
+                     let value = randomtext[index];
+                     par.innerHTML = value;
+                     count.add(index);
+                }
+                
+            }};
+    </script>
+</body>
+</html>

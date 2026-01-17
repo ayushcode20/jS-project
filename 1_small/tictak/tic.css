@@ -1,0 +1,49 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    background-color:#EEEBD0;
+}
+
+h1{
+    text-align: center;
+    color:#E86252 ;
+}
+
+body{
+   text-align: center;
+}
+main{
+    align-items: center;
+}
+
+#container{
+    
+    display: flex;
+    height: 70vmin;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#game{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 60vmin;
+    width:  60vmin;
+    gap: 1.5rem;
+}
+
+.box{
+    background-color:#EBB3A9 ;
+    height: 16vmin;
+    width : 16vmin;
+    border-color: #EBB3A9;
+}
+
+button{
+    height: 8vmin;
+    width:  12vmin;
+    font-size: 4vmin;
+}

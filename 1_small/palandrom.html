@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>palandrom converter </title>
+</head>
+<body>
+    <h1>palandrom checker</h1>
+    <input id = "inputbox",type="text", placeholder="text to convert">
+    <button id ="button1", onclick="create()" >check</button>
+
+    <script>
+        let input = document.getElementById("inputbox");
+        function spliter(arr){
+            return arr.split("").reverse().join(""); 
+        }
+        
+        function create() {
+        let x = input.value;
+        let y = spliter(x);
+        if (x===y) {
+            alert('its a palandrom!!!');
+            
+            
+        } else {
+            alert('its not a palandrom better luck next time ');
+        }
+        }
+
+    </script>
+</body>
+</html>
