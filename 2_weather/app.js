@@ -4,7 +4,7 @@ const weatherDiv = document.getElementById("weather");
 const errorDiv = document.getElementById("error");
 
 // Replace with your own API key
-const API_KEY = "-----";
+const API_KEY = "8825362014dd25d7af019a25f0c07fcf";
 
 searchBtn.addEventListener("click", getWeather);
 cityInput.addEventListener("keypress", function (e) {
@@ -45,4 +45,5 @@ function displayWeather(data) {
     <div>${data.name}, ${data.sys.country}</div>
   `;
 }
+
 
